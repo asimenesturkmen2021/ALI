@@ -50,7 +50,7 @@ public class TeacherService {
              throw  new BadRequestException(Messages.LESSON_PROGRAM_NOT_FOUND_MESSAGE);
          } else {
 
-             // !!! Dublicate kontrolu
+             // !!! Dublicate kontrolu (tekrar var ise exception firlat)
              fieldControl.checkDuplicate(teacherRequest.getUsername(),
                      teacherRequest.getSsn(),
                      teacherRequest.getPhoneNumber(),
